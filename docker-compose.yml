@@ -27,4 +27,6 @@ services:
     working_dir: /app
 
     # 起動後に実行するコマンドを指定
-    command: npm run start
+    command: 
+      - npm install
+      - npm run start
