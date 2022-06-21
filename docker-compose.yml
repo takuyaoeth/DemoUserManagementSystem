@@ -27,6 +27,6 @@ services:
     working_dir: /app
 
     # 起動後に実行するコマンドを指定
-    command: 
-#      - npm install
-#      - npm run start
+    command: >
+      bash -c "npm install &&
+      npm run start"
