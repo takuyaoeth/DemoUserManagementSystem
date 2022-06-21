@@ -29,4 +29,4 @@ services:
     # 起動後に実行するコマンドを指定
     command: 
       - npm install
-#      - npm run start
+      - npm run start
