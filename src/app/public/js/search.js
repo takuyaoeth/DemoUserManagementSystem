@@ -1,6 +1,6 @@
 const searchModule = (() => {
     const port = 80;
-    const BASE_URL = `http://localhost:${port}/api/v1/search`;
+    const BASE_URL = `http://54.168.239.119:${port}/api/v1/search`;
 
     return {
         searchUsers: async () => {
