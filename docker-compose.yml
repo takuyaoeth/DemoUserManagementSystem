@@ -5,7 +5,7 @@ services:
 
   app:
     # 起動するイメージを指定（ここではNode.js v12の公式イメージ）
-    image: node:12
+    image: node:16
 
     # 環境変数を設定
     environment:
