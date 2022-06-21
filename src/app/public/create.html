@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー検索sample</title>
+    <!-- Load script *deferをつけないと順番に読み込めない -->
+    <script src="js/users.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <style>body { margin: 0; }table{ margin:0; padding:0; } table tr td, table tr th{ border: 1px solid; margin: 0; padding: 0;}</style>
+</head>
+<body>
+    <main>
+        <h1>ユーザー新規作成</h1>
+        <label for="uid">ID</label>
+        <input type="text" id="uid" placeholder="自動採番されます" disabled />
+        <label for="name">名前</label>
+        <input type="text" id="name"/>
+        <label for="profile">プロフィール</label>
+        <input type="text" id="profile" />
+        <label for="date-of-birth">誕生日</label>
+        <input type="text" id="date-of-birth" />
+        <button id="save-button">保存</button>
+        <button id="cancel-button">キャンセル</button>
+    </main>
+</body>
+</html>

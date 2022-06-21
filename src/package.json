@@ -1,0 +1,19 @@
+{
+  "name": "0613_youtube_trahack_webapi_jissen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-dev ./app/app.js",
+    "connect": "sqlite3 ./app/db/database.sqlite3"
+  },
+  "author": "cattail",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "node-dev": "^7.4.3",
+    "sqlite3": "^5.0.8"
+  }
+}

@@ -1,0 +1,30 @@
+version: '3'
+services:
+  db:
+    image: keinos/sqlite3:latest
+
+  app:
+    # 起動するイメージを指定（ここではNode.js v12の公式イメージ）
+    image: node:12
+
+    # 環境変数を設定
+    environment:
+      - DEBUG=app:*
+      - PORT=80
+
+    tty: true
+
+    # ホスト側のポート:コンテナのポート
+    ports:
+      - '80:80'
+
+    # ソースコードを格納するフォルダをマウント
+    #（ホスト側の./srcをコンテナの/appにマウント）
+    volumes:
+      - ./src:/app
+
+    # 起動時のカレントフォルダを指定
+    working_dir: /app
+
+    # 起動後に実行するコマンドを指定
+    command: npm run start
