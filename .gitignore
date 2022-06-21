@@ -1,0 +1,10 @@
+coverage
+coverage.json
+typechain
+
+.env
+artifacts
+node_modules
+cache
+.firebaserc
+build
